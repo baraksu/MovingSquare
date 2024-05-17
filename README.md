@@ -4,3 +4,4 @@
 3. Mode 1 : Draw the quare and remove it. The user need to press in the square.
 4. Mode 2 : The Square is moving and not disappreing, The user need to press in the square.
  
+MOVING SQUARE
