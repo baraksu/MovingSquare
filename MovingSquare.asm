@@ -1,21 +1,21 @@
-;version 103
-
+;version 104
 .MODEL small 
 .STACK 100h 
 .DATA 3
 msg1 db 13,10,'Enter edge length (1-199): $' 
 msg2 db 13,10,'Enter game mode (1/2) $'
 
-msg4 dw 13,10,'You lose $' 
-
+lose1 dw 13,10,13,10,'             You lose $' 
+lose2 dw 13,10,13,10,'    good game,try again next time $'   
+lose3 dw 13,10,13,10,'       press any key to exit $' 
 color dw ?
 youwin1 db 13,10,'              __   _____  _   _  __        _____  _   _ _ $'        
 youwin2 db 13,10,'              \ \ / / _ \| | | | \ \      / / _ \| \ | | |$'        
 youwin3 db 13,10,'               \ V / | | | | | |  \ \ /\ / / | | |  \| | |$'        
 youwin4 db 13,10,'                | || |_| | |_| |   \ V  V /| |_| | |\  |_|$'        
-youwin5 db 13,10,'                |_| \___/ \___/     \_/\_/  \___/|_| \_(_)$'
-    
-
+youwin5 db 13,10,'                |_| \___/ \___/     \_/\_/  \___/|_| \_(_)$',13,10,13,10
+youwin6 db 13,10,'                               good job!  $' ,13,10,13,10 
+youwin7 db 13,10,'                          press any key to exit $'
     
 
 
@@ -111,7 +111,12 @@ mov ax,rndhightnum
 mov cx,rndwidthnum
 push ax
 push cx 
-call square     
+call square   
+call delay  
+call delay
+call delay
+call delay
+call delay
 mov color,0h
 push color
 mov ax,rndhightnum
@@ -210,33 +215,50 @@ win:
     mov ah, 0   ; set display mode function.
     mov al, 03h ; mode 13h = 320x200 pixels, 256 colors.
     int 10h     ; set it!
-    lea DX,youwin1 ;Show msg3 
+    lea DX,youwin1  
     mov AH,09h 
     int 21h 
-    lea DX,youwin2 ;Show msg3 
+    lea DX,youwin2 
     mov AH,09h 
     int 21h 
-    lea DX,youwin3 ;Show msg3 
+    lea DX,youwin3  
     mov AH,09h 
     int 21h 
-    lea DX,youwin4 ;Show msg3 
+    lea DX,youwin4  
     mov AH,09h 
     int 21h 
-    lea DX,youwin5 ;Show msg3 
+    lea DX,youwin5  
+    mov AH,09h 
+    int 21h             
+    lea DX,youwin6 
     mov AH,09h 
     int 21h 
+    lea DX,youwin7 
+    mov AH,09h 
+    int 21h 
+    
     jmp exit
 
 lose:  
     
-    lea DX,msg4 ;Show msg4 
+    lea DX,lose1
     mov AH,09h 
-    int 21h
-
+    int 21h     
+    lea DX,lose2 
+    mov AH,09h 
+    int 21h 
+    lea DX,lose3 
+    mov AH,09h 
+    int 21h 
+    
+    
+   
  
 exit: 
- mov AH, 4Ch ;End program 
- int 21h  
+    mov AH, 01h ;Read a character
+    int 21h 
+    mov AH, 4Ch ;End program 
+    int 21h  
 
  
 
@@ -335,6 +357,13 @@ mouseinput proc ;no parameters needed
     jne click
     ret  
 mouseinput endp ; the proc inputs a mouse click on the screen and puts it in- x=cx y=dx
- 
+proc delay ;the proc gives delay
+	pusha
+	mov cx, 03h   ;High Word
+	mov dx, 4240h ;Low Word
+	mov ah, 86h   ;Wait
+	int 15h
+	popa
+	ret
+endp delay 
 END
-
