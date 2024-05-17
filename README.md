@@ -61,6 +61,16 @@ if you pressed the correct area you will win:
 
 but if you chose game mode 2 the square will apear and you have to press it as fast as you can:
 
+![image](https://github.com/baraksu/MovingSquare/assets/167134517/0406b023-5cd3-47e1-8c28-a2003bda67d6)
+
+if you missed it it will apear in another place
+
+![image](https://github.com/baraksu/MovingSquare/assets/167134517/f82c4337-b813-4c82-ab5e-aaca9a8e4a81)
+
+and if you pressed it correctly you will win
+
+![image](https://github.com/baraksu/MovingSquare/assets/167134517/cefe654e-2e7d-4e7d-b799-7b68175b0e65)
+
 
 
 
