@@ -59,6 +59,12 @@ if you pressed the correct area you will win:
 
 
 
+but if you chose game mode 2 the square will apear and you have to press it as fast as you can:
+
+
+
+
+
 
 
 
