@@ -9,10 +9,26 @@
 
 
 
+
+
+
+
+
+
+
+
 MOVING SQUARE
 
 student: Roei Levi
 
 teacher: Barak subberi
+
+
+
+The Movingsquare program has 2 game mode:
+
+1. a memory game, the square apears in a random place and disapears,you have to press where the square was
+2. 
+3. the aim game, the square apears in a random place and you have to press where the square is if you missed it, it will apear somewhere else on the screen 
 
 
