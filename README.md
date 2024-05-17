@@ -23,6 +23,12 @@ student: Roei Levi
 
 teacher: Barak subberi
 
+grade: י'5
+
+school:  ישיבת בני עקיבא גבעת שמואל  
+
+year:  2023/2024
+
 
 
 The Movingsquare program has 2 game mode:
@@ -36,5 +42,17 @@ The Movingsquare program has 2 game mode:
 in this screen you have to put the length of the square and which game mode you chose 
 
 ![image](https://github.com/baraksu/MovingSquare/assets/167134517/6eedafc2-57da-436b-bedc-1fa2e17d0a40)
+
+
+
+then, if you chose game mode 1 the square will apear
+
+![image](https://github.com/baraksu/MovingSquare/assets/167134517/04448850-1c97-45fb-a447-0b900fe1a144)
+
+
+
+
+
+
 
 
