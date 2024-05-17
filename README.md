@@ -49,6 +49,15 @@ then, if you chose game mode 1 the square will apear
 
 ![image](https://github.com/baraksu/MovingSquare/assets/167134517/04448850-1c97-45fb-a447-0b900fe1a144)
 
+after a few seconds it will disapear and you will have to press the mouse where you think the square was
+
+![image](https://github.com/baraksu/MovingSquare/assets/167134517/a06e1b97-d613-440e-8579-c38dbbf6c1c0)
+
+if you pressed the correct area you will win:
+
+![image](https://github.com/baraksu/MovingSquare/assets/167134517/cefe654e-2e7d-4e7d-b799-7b68175b0e65)
+
+
 
 
 
