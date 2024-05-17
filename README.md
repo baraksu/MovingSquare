@@ -28,7 +28,13 @@ teacher: Barak subberi
 The Movingsquare program has 2 game mode:
 
 1. a memory game, the square apears in a random place and disapears,you have to press where the square was
-2. 
-3. the aim game, the square apears in a random place and you have to press where the square is if you missed it, it will apear somewhere else on the screen 
+
+2. the aim game, the square apears in a random place and you have to press where the square is if you missed it, it will apear somewhere else on the screen
+
+
+
+in this screen you have to put the length of the square and which game mode you chose 
+
+![image](https://github.com/baraksu/MovingSquare/assets/167134517/6eedafc2-57da-436b-bedc-1fa2e17d0a40)
 
 
